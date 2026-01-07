@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{somethin} cipher</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://pyscript.net/releases/2024.9.1/core.js"></script>
+  </head>
+  <body>
+    <h1>{thing} cipher</h1>
+    <div>
+      <h2>encode</h2>
+      <form id="formencode">
+        <label>input:</label>
+        <textarea rows="5" cols="90" name="input"></textarea>
+        <label>key:</label>
+        <textarea rows="3" cols="35" name="key"></textarea>
+        <label>charset:</label>
+        <textarea rows="3" cols="35" name="charset">abcdefghijklmnopqrstuvwxyz</textarea>
+      </form>
+      <h3>output:</h3>
+      <p class="output" id="encode">no input</p>
+      <button id="copy-encode">copy</button>
+    </div>
+    <div>
+      <h2>decode</h2>
+      <form id="formdecode">
+        <label>input:</label>
+        <textarea rows="5" cols="90" name="input"></textarea>
+        <label>key:</label>
+        <textarea rows="3" cols="35" name="key"></textarea>
+        <label>charset:</label>
+        <textarea rows="3" cols="35" name="charset">abcdefghijklmnopqrstuvwxyz</textarea>
+      </form>
+      <h3>output:</h3>
+      <p class="output" id="decode">no input</p>
+      <button id="copy-decode">copy</button>
+    </div>
+    <script type="py" src="script.py"></script>
+  </body>
+</html>
+
+
